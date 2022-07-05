@@ -56,6 +56,9 @@ types-tabulate = "^0.8.11"
 myst-parser = "^0.18.0"
 sphinx-rtd-theme = "^1.0.0"
 reuse = "^1.0.0"
+requests = "^2.28.1"
+pandas-stubs = "^1.4.3"
+openpyxl-stubs = "^0.1.21"
 
 [tool.poetry.scripts]
 "gallia" = "gallia.cli:main"
