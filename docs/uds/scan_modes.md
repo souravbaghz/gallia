@@ -99,6 +99,16 @@ The discovery procedure is dependend on the used addressing scheme.
 From a high level perspective, the destination id is iterated and a valid payload is sent.
 If a valid answer is received, an ECU has been found.
 
+## Session Scan
+
+UDS has the concept of sessions.
+Different sessions can provide different services.
+A session is identified by a 1 byte Session ID.
+The UDS standard defines a set of well known Session IDs, but vendors are free to add their own sessions.
+This scanner iterates all Session IDs to find all available sessions of the ECU.
+Because some sessions might only be reachable via a specific session, 
+this scanner uses a recursive approach and starts scanning for new sessions at every previously identified session. 
+
 ## Service Scan
 
 The service scan operates at the UDS protocol level.
